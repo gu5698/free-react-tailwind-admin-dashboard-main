@@ -2,12 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import SidebarLinkGroup from './SidebarLinkGroup';
 import Logo from '../../images/logo/logo.svg';
-import { useDnD } from '../../pages/DnDContext.tsx';
+import { useDnD } from '../../pages/DragDrop/DnDContext.tsx';
 
-interface SidebarProps {
-  sidebarOpen: boolean;
-  setSidebarOpen: (arg: boolean) => void;
-}
+// interface SidebarProps {
+//   sidebarOpen: boolean;
+//   setSidebarOpen: (arg: boolean) => void;
+// }
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   const location = useLocation();
